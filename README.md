@@ -68,7 +68,7 @@ Sample Output
 
 The title is: A tale of two cities
 ## Problem 3: A Java interface can only contain method signatures and fields. The interface can be used to achieve polymorphism. In this problem, you will practice your knowledge on interfaces.
-### Platform Used : HackerRank
+## Platform Used : HackerRank
 
 You are given an interface AdvancedArithmetic which contains a method signature int divisor_sum(int n). You need to write a class called MyCalculator which implements the interface.
 
