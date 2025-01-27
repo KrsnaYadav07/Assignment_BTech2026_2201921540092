@@ -2,6 +2,7 @@
 ## Problem 1: Using inheritance, one class can acquire the properties of others. Consider the following Animal class:
 
 ## Platform Used : HackerRank
+### Date: 25/01/25
 
 class Animal{
     void walk(){
@@ -40,6 +41,7 @@ I am singing
 ## Problem 2: A Java abstract class is a class that can't be instantiated. That means you cannot create new instances of an abstract class. It works as a base for subclasses. You should learn about Java Inheritance before attempting this challenge.
 
 ## Platform Used : HackerRank
+###Date: 25/01/25
 
 Following is an example of abstract class:
 
@@ -69,6 +71,7 @@ Sample Output
 The title is: A tale of two cities
 ## Problem 3: A Java interface can only contain method signatures and fields. The interface can be used to achieve polymorphism. In this problem, you will practice your knowledge on interfaces.
 ## Platform Used : HackerRank
+### Date: 26/01/25
 
 You are given an interface AdvancedArithmetic which contains a method signature int divisor_sum(int n). You need to write a class called MyCalculator which implements the interface.
 
@@ -87,7 +90,9 @@ Explanation
 
 Divisors of 6 are 1,2,3 and 6. 1+2+3+6=12.
 ## Problem 4: Method Overriding: When a subclass inherits from a superclass, it also inherits its methods; however, it can also override the superclass methods (as well as declare and implement new ones). 
+
 ## Platform Used : HackerRank
+### Date: 26/01/25
 
 Consider the following Sports class:
 
@@ -120,3 +125,77 @@ Generic Sports
 Each team has n players in Generic Sports
 Soccer Class
 Each team has 11 players in Soccer Class
+
+## Problem 5: When a method in a subclass overrides a method in superclass, it is still possible to call the overridden method using super keyword. If you write super.func() to call the function func(), it will call the method that was defined in the superclass.
+
+## Platform Used: HackerRank
+### Date:27/01/25
+
+You are given a partially completed code in the editor. Modify the code so that the code prints the following text:
+
+Hello I am a motorcycle, I am a cycle with an engine.
+My ancestor is a cycle who is a vehicle with pedals.
+
+## Problem 6: The Java instanceof operator is used to test if the object or instance is an instanceof the specified type.
+
+## Platform Used: HackerRank
+### Date: 27/01/25
+
+In this problem we have given you three classes in the editor:
+
+Student class
+Rockstar class
+Hacker class
+In the main method, we populated an ArrayList with several instances of these classes. count method calculates how many instances of each type is present in the ArrayList. The code prints three integers, the number of instance of Student class, the number of instance of Rockstar class, the number of instance of Hacker class.
+
+But some lines of the code are missing, and you have to fix it by modifying only  lines! Don't add, delete or modify any extra line.
+
+To restore the original code in the editor, click on the top left icon in the editor and create a new buffer.
+
+Sample Input
+
+5
+Student
+Student
+Rockstar
+Student
+Hacker
+Sample Output
+
+3 1 1
+
+## Problem 7: Java Iterator class can help you to iterate through every element in a collection. Here is a simple example:
+
+## Platform Used: HackerRank
+### Date: 27/01/25
+
+import java.util.*;
+public class Example{
+
+    public static void main(String []args){
+        ArrayList mylist = new ArrayList();
+        mylist.add("Hello");
+        mylist.add("Java");
+        mylist.add("4");
+        Iterator it = mylist.iterator();
+        while(it.hasNext()){
+            Object element = it.next();
+            System.out.println((String)element);
+        }
+    }
+}
+In this problem you need to complete a method func. The method takes an ArrayList as input. In that ArrayList there is one or more integer numbers, then there is a special string "###", after that there are one or more other strings.
+A sample ArrayList may look like this:
+
+element[0]=>42
+element[1]=>10
+element[2]=>"###"
+element[3]=>"Hello"
+element[4]=>"Java"
+You have to modify the func method by editing at most 2 lines so that the code only prints the elements after the special string "###". For the sample above the output will be:
+
+Hello
+Java
+Note: The stdin doesn't contain the string "###", it is added in the main method.
+
+To restore the original code in the editor, click the top left icon on the editor and create a new buffer.
