@@ -41,7 +41,7 @@ I am singing
 ## Problem 2: A Java abstract class is a class that can't be instantiated. That means you cannot create new instances of an abstract class. It works as a base for subclasses. You should learn about Java Inheritance before attempting this challenge.
 
 ## Platform Used : HackerRank
-###Date: 25/01/25
+### Date: 25/01/25
 
 Following is an example of abstract class:
 
@@ -199,3 +199,28 @@ Java
 Note: The stdin doesn't contain the string "###", it is added in the main method.
 
 To restore the original code in the editor, click the top left icon on the editor and create a new buffer.
+## Problem 8: Suppose you are designing a basic system to model different types of animals. There are two types of animals: Animal and Dog. Each animal has an attribute called name.
+## Platform Used: CodeChef
+### Date: 28/01/25
+
+Create a base class Animal with a property name (a string).
+Create a class Dog that inherits from Animal. The Dog class should have an additional property breed (a string) to represent the breed of the dog.
+In the main function, create an instance of the Dog class, set its name and breed properties, and then display the name and breed of the dog.
+Ensure that the base class Animal and the derived class Dog are correctly designed and that the properties are inherited and initialized properly.
+
+Task
+Given name and breed of dog as input, use display function to print the information of dog.
+
+Input Format
+First line contain the name of the dog.
+Second line contain the breed of the dog.
+Output Format
+Print name of the dog on first line.
+Print breed of the dog on second line.
+Sample 1:
+Input
+Output
+Buddy
+Retriever
+Buddy
+Retriever
