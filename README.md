@@ -295,3 +295,22 @@ The main method:
 Creates an instance of the Student class.
 Sets the name, score, and age attributes for the student with predefined values.
 Calls the eligible method to determine and display the student's eligibility.
+
+## Problem 12: Rectangle Class
+## Platform Used: CodeChef
+### Date: 30/01/30
+Write a class Rectangle with length and breadth as attribute and area and perimeter as methods. Given length and breadth as input, Print area and perimeter of rectangle using area and perimeter methods respectively.
+
+Input Format
+The first line of input contains length of rectangle.
+The second line of input contains breadth of rectangle.
+Output Format
+First line contains the output of area method of Rectangle.
+Second line contains the output of perimeter method of Rectangle.
+Sample 1:
+Input:
+2
+3
+Output:
+6
+10
