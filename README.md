@@ -273,3 +273,25 @@ Deposited: $200
 Account Number: 12345
 Account Holder: John Doe
 Balance: $700
+
+## Problem 11: Eligibility Checker for Students
+## Platform Used: CodeChef
+### Date: 30/01/30
+You are tasked with designing a simple program that determines the eligibility of students based on their scores and ages.
+
+Class Definitions:
+
+Student class:
+Attributes:
+name (String): The name of the student.
+score (int): The student's academic score.
+age (int): The age of the student.
+Methods:
+eligible(): A method that checks the student's eligibility and prints "YES" if the score is greater than 10 and the age is greater than 20. Otherwise, it prints "NO."
+Main Class:
+
+Codechef class:
+The main method:
+Creates an instance of the Student class.
+Sets the name, score, and age attributes for the student with predefined values.
+Calls the eligible method to determine and display the student's eligibility.
