@@ -327,3 +327,16 @@ Setter Method: A setter method allows you to modify the value of a private field
 Using Getter and Setter: You can use the getter and setter methods to access and modify the private field.
 
 In this example, the setMyField method sets the value of myField, and the getMyField method retrieves the value. Getter and setter methods provide controlled access to private fields.
+
+## Problem 14: Ambiguity in Multiple inheritance.
+## Platform Used: CodeChef
+### Date: 31/01/25
+
+Let's see the example by using two base classes and one derived class to demonstrate the multiple inheritance ambiguity, often referred to as the "diamond problem" in C++.
+
+Suppose you have two base classes:
+
+BaseA - The first base class with a method called foo().
+BaseB - The second base class with a method called foo() as well.
+Derived - Inherits from both BaseA and BaseB.
+In this simplified example, when you call derived.foo() Line 24, the compiler doesn't know whether you want to call foo() from BaseA or BaseB because both base classes provide an implementation of foo(). This ambiguity is the essence of the diamond problem
