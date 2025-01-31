@@ -1,0 +1,22 @@
+class MyClass {
+    private int myField;
+
+    public int getMyField() {
+        return myField;
+    }
+
+    public void setMyField(int value) {
+        myField = value;
+    }
+}
+
+class Codechef {
+    public static void main(String[] args) {
+        MyClass obj = new MyClass();
+
+        obj.setMyField(42);
+
+        int value = obj.getMyField();
+        System.out.println("Value of myField: " + value);
+    }
+}
