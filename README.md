@@ -314,3 +314,16 @@ Input:
 Output:
 6
 10
+## Program 13: How to deal with Private Data Member
+## Platform Used: CodeChef
+### Date: 31/01/25
+
+In Java, getter and setter methods are used to access and modify private data members (fields) of a class. Here's how you can create getter and setter methods for private data members:
+
+Getter Method: A getter method allows you to retrieve the value of a private field.
+
+Setter Method: A setter method allows you to modify the value of a private field.
+
+Using Getter and Setter: You can use the getter and setter methods to access and modify the private field.
+
+In this example, the setMyField method sets the value of myField, and the getMyField method retrieves the value. Getter and setter methods provide controlled access to private fields.
