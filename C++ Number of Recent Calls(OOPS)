@@ -1,0 +1,23 @@
+class RecentCounter {
+private:
+    vector<int>request;
+    int recent;
+public:
+    RecentCounter():recent(0){}
+
+    int ping(int t) {
+        request.push_back(t);
+        while((request[recent])<t-3000){
+            recent++;
+        }
+        int n = request.size();
+        return n-recent;
+        
+    }
+};
+
+/**
+ * Your RecentCounter object will be instantiated and called as such:
+ * RecentCounter* obj = new RecentCounter();
+ * int param_1 = obj->ping(t);
+ */
