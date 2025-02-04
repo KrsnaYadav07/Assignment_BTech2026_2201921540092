@@ -446,7 +446,26 @@ recentCounter.ping(1);     // requests = [1], range is [-2999,1], return 1
 recentCounter.ping(100);   // requests = [1, 100], range is [-2900,100], return 2
 recentCounter.ping(3001);  // requests = [1, 100, 3001], range is [1,3001], return 3
 recentCounter.ping(3002);  // requests = [1, 100, 3001, 3002], range is [2,3002], return 3
- 
+
+## Problem 18: Banking System with User-Defined Exceptions
+## Platform Used: CodeChef
+### Date: 04/02/2025
+You are tasked with designing a simple banking system.
+Implement the following components using C++ classes and user-defined exceptions:
+
+Create a BankAccount class to represent a bank account.
+Each account should have the following attributes:
+Account Number (an integer)
+Account Holder Name (a string)
+Balance (a floating-point value)
+Additionally, include a method withdraw that allows an account holder to withdraw money.
+If the withdrawal amount exceeds the account balance, throw a InsufficientFundsException with an appropriate error message.
+Create a InsufficientFundsException class that is derived from std::exception.
+This class should include a constructor that takes an error message as a parameter.
+In the main function:
+Create several BankAccount objects.
+Deposit and withdraw money from these accounts.
+Catch and handle the InsufficientFundsException when a withdrawal exceeds the account balance.
 
 Constraints:
 
