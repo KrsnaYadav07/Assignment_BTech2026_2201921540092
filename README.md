@@ -485,4 +485,30 @@ If the entered integer is less than MIN_VALUE or greater than MAX_VALUE, throw a
 catch block:
 Catch the std::out_of_range exception.
 Display an error message indicating that the entered integer is out of the specified range.
-Task
+
+## Problem 20: Area of Rectangle
+## Platform Used: TECHGIG
+### Date: 06/02/2025
+
+Create two classes:
+BaseClass
+The Rectangle class should have two data fields-width and height of int types. The class should have display()method, to print the width and height of the rectangle separated by space.
+DerivedClass 
+The RectangleArea class is derived from Rectangle class, i.e., it is the sub-class of Rectangle class. The class should have read_input() method, to read the values of width and height of the rectangle. The RectangleArea class should also overload  the display() method to print the area (width*height) of the rectangle.
+
+Input Format
+The first and only line of input contains two space separated integers denoting the width and height of the rectangle.
+
+Constraints
+1 <= width,height <= 10^3
+
+Output Format
+The output should consist of exactly two lines: 
+In the first line, print the width and height of the rectangle separated by space. 
+In the second line, print the area of the rectangle.
+Sample TestCase 1
+Input
+12 9
+Output
+12 9
+108
