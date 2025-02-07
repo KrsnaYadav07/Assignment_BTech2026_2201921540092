@@ -1,0 +1,38 @@
+#include <iostream>
+#include <stdexcept>
+using namespace std;
+
+class DivisionByZeroException : public exception {
+public:
+    DivisionByZeroException(const char* message) : msg(message) {}
+
+    
+    const char* what() const throw() {
+        return msg.c_str();
+    }
+
+private:
+    string msg;
+};
+
+int safeDivision(int numerator, int denominator) {
+    if (denominator == 0) {
+        throw DivisionByZeroException("Division by zero is not allowed.");
+    }
+    return numerator / denominator;
+}
+
+int main() {
+    try {
+        int numerator = 8;
+        int denominator = 0;
+
+        int result = safeDivision(numerator, denominator);
+        cout << "Result of division: " << result << endl;
+    }
+    catch (const DivisionByZeroException& ex) {
+        cout << "Error: " << ex.what() << endl;
+    }
+
+    return 0;
+}
