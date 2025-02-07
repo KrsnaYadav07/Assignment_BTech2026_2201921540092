@@ -512,3 +512,18 @@ Input
 Output
 12 9
 108
+
+## Problem 21: Handling Division by Zero
+## Platform Used: CodeChef
+### Date:07/02/2025
+
+Create a C++ program that performs a division operation and handles the case when division by zero occurs. Implement the following components:
+
+Create a function called safeDivision that takes two integer parameters, numerator and denominator, and returns the result of dividing the numerator by the denominator.
+Inside the safeDivision function, include error handling to check if the denominator is zero.
+If the denominator is zero, throw a user-defined exception named DivisionByZeroException with the error message "Division by zero is not allowed."
+Define the DivisionByZeroException class, which is derived from std::exception, to handle division by zero.
+Include a constructor that allows you to provide a custom error message.
+In the main function:
+Call the safeDivision function with numerator = 8 and denominator = 0.
+If division by zero occurs, catch the DivisionByZeroException and display the error message "Error: Division by zero is not allowed."
