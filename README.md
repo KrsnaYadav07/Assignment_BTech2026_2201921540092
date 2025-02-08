@@ -527,3 +527,20 @@ Include a constructor that allows you to provide a custom error message.
 In the main function:
 Call the safeDivision function with numerator = 8 and denominator = 0.
 If division by zero occurs, catch the DivisionByZeroException and display the error message "Error: Division by zero is not allowed."
+
+## Problem 22: Using invalid_argument Exception
+## Platform Used: CodeChef
+### Date:08/02/2025
+
+You are tasked with implementing a program that calculates the square root of a given integer.
+However, to ensure the validity of the input, you need to incorporate error handling using C++'s std::invalid_argument exception class.
+
+Here are the specific requirements for your program:
+
+Create a function named calculateSquareRoot that takes an integer as its input parameter.
+This function should calculate the square root of the integer using the sqrt function from the <cmath> library.
+Inside the calculateSquareRoot function, include a check to ensure that the input integer is non-negative.
+If the input integer is negative, throw an std::invalid_argument exception with the following error message: "Invalid argument. Input must be a non-negative integer."
+In the main function, initialize an integer variable called input with -2.
+Use a try-catch block to call the calculateSquareRoot function with the input as an argument.
+Catch and handle any exceptions of type std::invalid_argument that may be thrown.
