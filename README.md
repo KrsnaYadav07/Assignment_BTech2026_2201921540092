@@ -544,3 +544,38 @@ If the input integer is negative, throw an std::invalid_argument exception with 
 In the main function, initialize an integer variable called input with -2.
 Use a try-catch block to call the calculateSquareRoot function with the input as an argument.
 Catch and handle any exceptions of type std::invalid_argument that may be thrown.
+
+## Problem 23: One Two Three
+## Platform Used: TECHGIG
+### Date: 09/02/2025
+
+Make three classes FIRST, SECOND and THIRD. The three classes have functions one(), two(), three() respectively. Class SECOND inherits class FIRST and CLASS THIRD inherits class SECOND.
+
+The respective methods have the following texts:
+one(): This is base class
+
+two(): This inherits class FIRST
+
+three(): This inherits class SECOND
+
+Make the object of class THIRD.
+
+Input Format
+NA
+
+Constraints
+NA
+
+Output Format
+Print the output in below format:
+This is base class.
+This inherits class FIRST.
+This inherits class SECOND.
+
+Sample TestCase 1
+Input
+NA
+Output
+This is base class.
+This inherits class FIRST.
+This inherits class SECOND.
