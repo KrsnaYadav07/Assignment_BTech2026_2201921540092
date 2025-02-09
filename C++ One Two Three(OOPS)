@@ -1,0 +1,29 @@
+/*Enter your code here. Read input from STDIN. Print your output to STDOUT*/
+#include <iostream>
+using namespace std;
+class FIRST{
+public:
+	void one(){
+		cout<<"This is base class."<<endl;
+	}
+};
+class SECOND:public FIRST{
+public:
+	void two(){
+		cout<<"This inherits class FIRST."<<endl;
+	}
+};
+class THIRD:public SECOND{
+public:
+	void three(){
+		cout<<"This inherits class SECOND."<<endl;
+	}
+};
+int main()
+{
+	THIRD t;
+	t.one();
+	t.two();
+	t.three();
+	return 0;
+}
