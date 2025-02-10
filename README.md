@@ -579,3 +579,12 @@ Output
 This is base class.
 This inherits class FIRST.
 This inherits class SECOND.
+
+## Problem: 24 User-Defined Exceptions
+## Platform Used: CodeChef
+### Date: 10/02/2025
+In C++, you can create user-defined exceptions by defining your own exception classes. Creating your own exception classes allows you to provide more context-specific information about the error and customize how it is handled.
+
+Define a Custom Exception Class: To create a user-defined exception, you need to define a new class that is derived from the exception class or one of its derived classes.
+
+Handling User-Defined Exceptions: When you catch a user-defined exception, you can handle it just like any other exception by providing code within the catch block to handle the error. You can access the error message or any other information provided by your custom exception class.
